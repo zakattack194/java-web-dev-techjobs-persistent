@@ -1,6 +1,7 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Entity
 public class Job extends AbstractEntity{
@@ -13,7 +14,6 @@ public class Job extends AbstractEntity{
     }
 
     public Job(Employer anEmployer, String someSkills) {
-        super();
         this.employer = anEmployer;
         this.skills = someSkills;
     }
